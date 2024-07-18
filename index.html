@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TETRIS</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <header>
+    <h1>TETRIS</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>NEXT</h2>
+      <canvas id="nextCanvas" width="120" height="120"></canvas>
+
+      <div class="control">
+        <h2>CONTROL</h2>
+
+        <p>←: Move Left</p>
+        <p>→: Move Right</p>
+        <p>↓: Move Down</p>
+        <p>A: Rotate ↶</p>
+        <p>D: Rotate ↷</p>
+        <p>Space: Drop</p>
+
+      </div>
+    </section>
+
+    <canvas id="gameCanvas" width="360" height="630"></canvas>
+
+    <section>
+      <h2>SCORE</h2>
+      <h2 id="score">0</h2>
+      <h2>LINES</h2>
+      <h2 id="lines">0</h2>
+      <h2>COMBO</h2>
+      <h2 id="combo">0</h2>
+
+      <div class="scorerule">
+        <h3>SCORE RULE</h3>
+        <p>Single: 100</p>
+        <p>Double: 300</P>
+        <p>Triple: 500</p>
+        <p>Tetris: 800</p>
+        <hr/>
+        <p>Combo: +0.2%</p>
+      </div>
+    </section>
+
+    <div id="gameOverModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Game Over</h2>
+        <p id="finalScore"></p>
+        <p id="finalLines"></p>
+        <button id="restartButton">Play Again</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Ellie. All Rights Reserved.</p>
+  </footer>
+
+  <script type="module" src="js/game.js"></script>
+  <script src="js/gameovermodal.js"></script>
+</body>
+
+</html>
