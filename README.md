@@ -2,8 +2,7 @@
 
 고전 게임 테트리스입니다.
 
-https://park-ssoyeon.github.io/tetris/
-해당 링크를 통해 바로 실행 가능합니다.
+<a href="https://park-ssoyeon.github.io/tetris/" target="_blank">테트리스 바로 실행</a>
 
 ## 목차
 
